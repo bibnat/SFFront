@@ -1,4 +1,4 @@
-.body{background-image: url("../imagenes/hoja.jpg");}
+.body{background-image: url("../imagenes/hoja.jpg");background-size: cover;}
 
 .rojotitulo{color: red; text-align: center;}
 
