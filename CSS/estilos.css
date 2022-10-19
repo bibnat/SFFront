@@ -1,17 +1,13 @@
-.body{backgroundcolor: beige;}
+.body{bbackground-color: beige; width: 600px; height:400px; text-align: left; margin-left: auto; margin-right: auto;}
 
 .rojotitulo{color: red; text-align: center;}
 
 .subrayado{color: green; text-align: center; text-decoration-line: underline;}
 
-.subrayado2{text-align: left;}
+.subrayado2{color: red; text-align:center; text-decoration-line: underline;}
 
 .foto{display: flex; justify-content: center;}
 
-.texto{text-align: center; font-family: sans-serif; font-style: normal;}
+.texto{text-align:center; font-family: sans-serif; font-style: normal; font-size: 12px;}
 
-.contenedor{width: 1400px; height: 1800px;}
-
-.caja1{width: 600px; height:400px; text-align: left; margin-left: auto; margin-right: auto;}
-
-.caja2{width: 800px; height:1200px; text-align: left; margin-left: 400px; margin-right: auto;}
+.contenedor{width: auto; height: auto;}
