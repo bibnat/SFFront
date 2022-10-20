@@ -1,4 +1,28 @@
-.body{width: 600px; height:400px; text-align: left; margin-left: auto; margin-right: auto;}
+body{background-color: beige;}
+header {background-color: #EBDEF0;}
+nav {background-color: #EBDEF0;}
+footer {background-color: #EBDEF0;}
+img{transition: all 0.8s ease;
+}
+img:hover{
+    transition: all 0.6s ease;
+    filter: brightness(150%);
+}
+
+.menu li a{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background: #AF7AC5;
+}
 
 .rojotitulo{color: red; text-align: center;}
 
@@ -8,4 +32,19 @@
 
 .foto{display: flex; justify-content: center;}
 
-.texto{text-align:center; font-family: sans-serif; font-style: normal; font-size: 12px;}
+.texto{text-align:center; font-family: sans-serif; font-style: normal; font-size: 14px;}
+
+.contenedor{display: flex;
+            align-items: stretch;
+            flex-direction: row;
+            justify-content:center;
+}
+
+.item{
+  height: 30px;
+}
+.iconowhat{position: fixed;
+      width: 30px;
+      bottom: 30px;
+      right: 30px;
+}
