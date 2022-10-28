@@ -1,22 +1,70 @@
-body{background-color: beige;}
-header {background-color: #EBDEF0;}
-nav {background-color: #EBDEF0;}
-footer {background-color: #EBDEF0;}
+
+body{background-color: beige;
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {background-color: #EBDEF0;
+      display: flex;
+      justify-content: space-around;
+      align-items:center;
+      border-radius: 5px;
+      flex-wrap: wrap;
+      font-size: 30px;
+}
+nav {display:inline-block;
+    background-color: #EBDEF0;
+}
+
+nav ul {
+ margin-top: 0px;
+}
+
+main{display: flex;
+        width: 100%;
+        justify-content: center;
+        overflow: auto;
+        display: block;
+    justify-content: space-around;
+}
+
+section{display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+footer {background-color: #EBDEF0;
+     display: flex;
+     justify-content:center;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     font-size: 15px;
+}
+
 img{transition: all 0.8s ease;
 }
+
 img:hover{
     transition: all 0.6s ease;
     filter: brightness(150%);
 }
 
+.logo {float: left;
+    border-radius: 5px;
+  }
+
 .menu li a{
-    text-decoration: none;
+    text-decoration:underline;
     padding: 20px;
     display: block;
 }
 
 .menu li{
-    display: inline-block;
+    display:inline-flex;
     text-align: center;
 }
 
@@ -32,17 +80,31 @@ img:hover{
 
 .foto{display: flex; justify-content: center;}
 
-.texto{text-align:center; font-family: sans-serif; font-style: normal; font-size: 14px;}
+.texto{text-align: center; font-family: sans-serif; font-style: normal; font-size: 20px;}
 
-.contenedor{display: flex;
-            align-items: stretch;
-            flex-direction: row;
-            justify-content:center;
+
+
+
+.social{height: 75px;
+      width: 150px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 5px;
+      flex-wrap: wrap;
 }
 
 .item{
-  height: 30px;
+  height: 50px;
+  width: 50px;
+
+
 }
+
+.info{text-align: center;
+
+}
+
 .iconowhat{position: fixed;
       width: 30px;
       bottom: 30px;
