@@ -1,9 +1,9 @@
-
+*{
+  box-sizing: border-box;
+}
 body{background-color: beige;
     margin: 0;
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+    padding: 0;
 }
 
 header {background-color: #EBDEF0;
@@ -14,12 +14,21 @@ header {background-color: #EBDEF0;
       flex-wrap: wrap;
       font-size: 30px;
 }
-nav {display:inline-block;
+nav {display:flex;
+  flex-direction: row;
     background-color: #EBDEF0;
 }
 
-nav ul {
- margin-top: 0px;
+nav a {
+ padding: 14px 20px;
+ text-decoration: none;
+ display:flex;
+ flex-direction: row;
+ text-align: center;
+}
+
+nav a:hover{
+    background: #AF7AC5;
 }
 
 main{display: flex;
@@ -33,7 +42,6 @@ main{display: flex;
 section{display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 footer {background-color: #EBDEF0;
@@ -43,6 +51,9 @@ footer {background-color: #EBDEF0;
      align-items: center;
      flex-wrap: wrap;
      font-size: 15px;
+     bottom: 0;
+     right: 0;
+
 }
 
 img{transition: all 0.8s ease;
@@ -53,24 +64,9 @@ img:hover{
     filter: brightness(150%);
 }
 
-.logo {float: left;
-    border-radius: 5px;
+.logo {border: 2px;
+     margin: none;
   }
-
-.menu li a{
-    text-decoration:underline;
-    padding: 20px;
-    display: block;
-}
-
-.menu li{
-    display:inline-flex;
-    text-align: center;
-}
-
-.menu li a:hover{
-    background: #AF7AC5;
-}
 
 .rojotitulo{color: red; text-align: center;}
 
@@ -81,9 +77,6 @@ img:hover{
 .foto{display: flex; justify-content: center;}
 
 .texto{text-align: center; font-family: sans-serif; font-style: normal; font-size: 20px;}
-
-
-
 
 .social{height: 75px;
       width: 150px;
@@ -97,16 +90,22 @@ img:hover{
 .item{
   height: 50px;
   width: 50px;
-
-
 }
 
 .info{text-align: center;
-
 }
 
 .iconowhat{position: fixed;
       width: 30px;
       bottom: 30px;
       right: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  nav{flex-direction: column;}
+}
+
+@media screen and (max-width: 700px) {
+
+  .ifra{width: 50%;}
 }
