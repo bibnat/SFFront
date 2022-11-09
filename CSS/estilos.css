@@ -73,15 +73,29 @@ p {
      margin: none;
   }
 
-.rojotitulo{color: red; text-align: center;}
+#rojotitulo{color: red; text-align: center;}
 
-.subrayado{color: green; text-align: center; text-decoration-line: underline;}
+#subrayado{color: green; text-align: center; text-decoration-line: underline;}
 
-.subrayado2{color: red; text-align:center; text-decoration-line: underline;}
+#verdetitulo{color: green; text-align: center; text-decoration-line: underline;}
+
+#subrayado2{color: red; text-align:center; text-decoration-line: underline;}
 
 .foto{display: flex; justify-content: center;}
 
 .texto{text-align: center; font-family: sans-serif; font-style: normal; font-size: 20px;}
+
+.oscuro{background: #9E9998;
+    border-radius: 8px;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.oscuro:hover{font-size: 1.3rem;
+}
 
 .social{height: 75px;
       width: 150px;
@@ -113,5 +127,14 @@ p {
 
 @media screen and (max-width: 700px) {
 
-  .ifra{width: 50%;}
+.ifra{width: 50%;}
+}
+
+.bio{background-color: #E3C7FD;
+  border-radius: 8px;
+  box-shadow: 5px 5px rgba(0,0,0,0.5);
+  border: none;
+}
+
+.bio:hover{background-color: #D2B0F3;
 }
